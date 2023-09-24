@@ -30,11 +30,14 @@
 }
 
 .overtitle {
+    font-size: 1.5rem;
     border: 4px dotted blue;
     padding: 5px;
+    margin-top: -25px;
 }
 
 .undertitle {
+    font-size: 1.4rem;
     border: 4px dotted blue;
     padding: 5px;
 
@@ -44,17 +47,35 @@
     text-align: center;
     color: yellow;
     background-color: black;
-    width: 60rem;
-    height: ;
+    width: 66rem;
+    height: 32rem;
     border: dotted blue 4px;
     padding: 50px;
     margin-left: auto;
     margin-right: auto;
 
 }
-.pac-gif{
-    width: 50px;  
+
+.header-gifs {
+    display: flex;
+    direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
 }
+.header-gifs-1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 50px;
+    height: 50px;
+}
+
+.header-gifs-2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 50px;
+    height: 50px;
+}
+
 
 .grid-content{
     margin-top: 1.5rem;
@@ -79,6 +100,8 @@
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .giphy{
@@ -97,6 +120,7 @@
     width: 180px;
 }
 .grid-content-box-3{
+    width: 45rem;
     padding: 10px;
     color: yellow;
     border: dotted blue 4px;
@@ -119,11 +143,14 @@
 }
 
 .grid-content-box-4{
+    width: 68rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: yellow;
     border: dotted blue 4px;
     background-color: black;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .superpacman{
@@ -266,7 +293,7 @@
     color: blue;
 }
 
-.flip-card-back-3{
+.flip-card-back-3 {
     margin-top: 20px;
     font-size: 13px;
     text-align: center;
@@ -274,12 +301,12 @@
     transform: rotateY(180deg);
 }
 
-.grid-content :first-child{
+.grid-content :first-child {
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
-.grid-content :last-child{
+.grid-content :last-child {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
@@ -299,3 +326,228 @@
     grid-column-end: 4;
 
 }
+
+.container h2{
+    text-align: center;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    font-size: 12px;
+    position: relative;
+    color: yellow;
+    background-color: black;
+    width: 68rem;
+    height: 1550px;
+    border: dotted blue 4px;
+    padding: 50px;
+    padding-top: 50px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline {
+    padding: 50px;
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline ul {
+    list-style: none;
+}
+
+.timeline ul li{
+    padding: 20px;
+    background-color: black;
+    border: dotted blue 4px;
+    color: yellow;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.timeline ul li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-content h3{
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container::before {
+        margin-top: 50px;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color:yellow;
+        
+    }
+
+    .timeline ul li {
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+    }
+    .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+    }
+    .timeline ul li:nth-child(odd)::after {
+        content: url(/imgs/pacylittleleft.gif);
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        border-radius: 50%;
+        top: 0;
+    }
+
+    .timeline ul li:nth-child(even)::after {
+        content: url(/imgs/pacylittle.gif);
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        border-radius: 50%;
+        top: 0;
+    }
+
+    .timeline ul li:nth-child(odd)::after {
+        transform: translate(50%, -50%);
+        right: -21px;
+    }
+
+    .timeline ul li:nth-child(even)::after {
+        transform: translate(-50%, -50%);
+        left: -21px;
+    }
+    
+    
+    
+}
+.parent-container {
+    position: absolute;
+    z-index: 1;
+    top: 470px;
+    left: 300px;
+}
+
+.parent-container-2 {
+    position: absolute;
+    z-index: 1;
+    top: 885px;
+    left: 258px;
+}
+
+.parent-container-3 {
+    position: absolute;
+    z-index: 1;
+    left: 620px;
+    top: 260px;
+}
+
+.parent-container-4 {
+    position: absolute;
+    z-index: 1;
+    top: 632px;
+    left: 640px;
+}
+
+
+
+
+
+
+
+.button-container {
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .button-container input {
+    display:none;
+  }
+  .button-container label {
+    position:relative;
+    width:70px;
+    height:70px;
+    border: dotted yellow 4px;
+    background: blue;
+    border-radius:50%;
+    display:block;
+    margin:0 auto;
+    cursor:pointer;
+    transform:rotate(0deg);
+    transition:all 300ms ease-in-out;
+  }
+  .button-container label:before,
+  .button-container label:after {
+    content:"";
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:5px;
+    height:25px;
+    background:yellow;
+  }
+  .button-container label:before {
+    transform:translate(-50%,-50%);
+  }
+  .button-container label:after {
+    transform:translate(-50%,-50%) rotate(90deg);
+  }
+  .button-container .nav {
+    position:relative;
+    top:-20px;
+    opacity:0;
+    left:-100vw;
+    width:200px;
+    padding:10px 20px;
+    background: black;
+    border:4px dotted blue;
+    border-radius:10px;
+    box-shadow:2px 2px 5px 2px rgba(0,0,0,0.05);
+    transition:left 0ms ease-in-out 300ms,
+               top 300ms ease-in-out,
+               opacity 300ms ease-in-out;
+  }
+  .button-container .nav a {
+    display:block;
+    text-decoration:none;
+    margin:15px 0px;
+    text-align:center;
+    color:yellow;
+  }
+  .button-container #toggle-btn:checked ~ .nav {
+    left:0px;
+    top:10px;
+    opacity:1;
+    transition:left 0ms ease-in-out 0ms,
+               top 300ms ease-in-out,
+               opacity 300ms ease-in-out;
+  }
+  .buttton-container #toggle-btn:checked + label {
+    transform:rotate(135deg);
+  }
