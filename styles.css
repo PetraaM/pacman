@@ -3,7 +3,7 @@
     scrollbar-color: yellow blue;
   }
 
-  /* Chrome, Edge, and Safari */
+ 
   *::-webkit-scrollbar {
     width: 16px;
   }
@@ -21,6 +21,7 @@
 .pacman-body-content{
     background-color: yellow;
     font-family: Tvcd;
+    
 }
 
 .flex-container {
@@ -32,14 +33,14 @@
 .overtitle {
     font-size: 1.5rem;
     border: 4px dotted blue;
-    padding: 5px;
-    margin-top: -25px;
+    padding: 1rem;
+    margin-top: -2rem;
 }
 
 .undertitle {
     font-size: 1.4rem;
     border: 4px dotted blue;
-    padding: 5px;
+    padding: 1rem;
 
 }
 .site-header{
@@ -47,14 +48,15 @@
     text-align: center;
     color: yellow;
     background-color: black;
-    width: 66rem;
-    height: 32rem;
+    width: auto;
+    height: auto;
     border: dotted blue 4px;
-    padding: 50px;
+    padding: 4rem;
     margin-left: auto;
     margin-right: auto;
 
 }
+
 
 .header-gifs {
     display: flex;
@@ -76,8 +78,35 @@
     height: 50px;
 }
 
+@media (max-width:600px){
+    .undertitle {
+        font-size: 0.9rem;
+        width: auto;
+    }
+    .overtitle {
+        font-size: 1.2rem;
+        width: auto;
+    }
+    .pacman-logo {
+        width: 80%;
+    }
+    .header-gifs {
+        justify-content: space-between;
+    }
+    .header-gifs-1 {
+        width: 30px;   
+        height: 30px
+        
+    }
+    .header-gifs-2 {
+        width: 30px;   
+        height: 30px;
+    }
+}
 
 .grid-content{
+    padding: 1rem;
+    border: dotted blue 4px;
     margin-top: 1.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -93,6 +122,7 @@
 
 
 .grid-content-box-1{
+    width: auto;
     color: yellow;
     border: dotted blue 4px;
     background-color: black;
@@ -108,6 +138,7 @@
     width: 200px;
 }
 .grid-content-box-2{
+    width: auto;
     color: yellow;
     border: dotted blue 4px;
     background-color: black;
@@ -120,12 +151,14 @@
     width: 180px;
 }
 .grid-content-box-3{
-    width: 45rem;
+    width: auto;
     padding: 10px;
     color: yellow;
     border: dotted blue 4px;
     background-color: black;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .PACMAN{
@@ -134,29 +167,22 @@
     padding-bottom: 10px;
 }
     
-.pacigif{
-    padding-top: 10px;
-    height: 70px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 .grid-content-box-4{
-    width: 68rem;
+    width: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     color: yellow;
     border: dotted blue 4px;
     background-color: black;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 .superpacman{
     width: 200px;
     margin-left: 10px;
     padding-top: 10px;
+    padding-bottom: 10px;
 
 }
 
@@ -167,7 +193,8 @@
     height: 300px;
     border: dotted blue 4px;
     perspective: 1000px;   
-    margin-left: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
     margin-top: 32px;
 }
   
@@ -207,6 +234,8 @@
 .miss-pacman {
     width: 210px;
     margin-top: 14px;
+    
+    
 }
 
 .flip-card-2 {
@@ -215,7 +244,7 @@
     height: 300px;
     border: dotted blue 4px;
     perspective: 1000px;   
-    margin-left: 30px;
+    margin-left: px;
     margin-top: 32px;
 }
 
@@ -256,6 +285,7 @@
     margin-top: 20px;
     width: 200px;
     height: 260px;
+    
 }
 
 .flip-card-3 {
@@ -264,8 +294,10 @@
     height: 300px;
     border: dotted blue 4px;
     perspective: 1000px;   
-    margin-left: 30px;
+    margin-left: 70px;
     margin-top: 32px;
+    margin-right: 70px;
+    margin-bottom: 32px;
 }
   
 .flip-card-inner-3 {
@@ -327,6 +359,41 @@
 
 }
 
+@media (max-width: 600px) {
+    .grid-content {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }  
+    .grid-content-box-1{
+        width: auto;
+        height: 700px;
+        overflow: scroll;
+    }
+    .grid-content-box-2{
+        order: -1;
+    }   
+    .grid-content-box-4{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .flip-card {
+        margin-left: 90px;
+    }
+    .flip-card-2 {
+        margin-left: 90px;
+    }
+    .flip-card-3 {
+        margin-left: 90px;
+    }
+    }
+
+
+
+
 .container h2{
     text-align: center;
 
@@ -337,12 +404,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 .container {
     font-size: 12px;
     position: relative;
     color: yellow;
     background-color: black;
-    width: 68rem;
+    width: 62rem;
     height: 1550px;
     border: dotted blue 4px;
     padding: 50px;
@@ -474,50 +543,71 @@
     left: 640px;
 }
 
-
-
+ @media (max-width: 600px){
+    .container {
+        width: auto;
+        height: 1700px;
+    }
+    .timeline ul li {
+        font-size: 10px;
+    }
+    .parent-container {
+        left: 50px;
+    }
+    .parent-container-2 {
+        left: 18px;
+    }
+    .parent-container-3 {
+        left: 275px;
+    }
+    .parent-container-4 {
+        left: 275px;
+    }
+} 
 
 
 
 
 .button-container {
-    position:absolute;
-    top:55%;
+    position: absolute;
+    top: 55%;
     left:50%;
     transform:translate(-50%,-50%);
+    padding-top: 10rem;
+
   }
   .button-container input {
-    display:none;
+    display: none;
   }
   .button-container label {
     position:relative;
-    width:70px;
-    height:70px;
-    border: dotted yellow 4px;
-    background: blue;
+    width:100px;
+    height:100px;
+    border: dotted blue 4px;
+    background: yellow;
     border-radius:50%;
     display:block;
     margin:0 auto;
     cursor:pointer;
     transform:rotate(0deg);
     transition:all 300ms ease-in-out;
+    color: blue;
   }
-  .button-container label:before,
-  .button-container label:after {
-    content:"";
+  .button-container label:before {
+    content: "MENU";
     position:absolute;
     top:50%;
     left:50%;
-    width:5px;
-    height:25px;
     background:yellow;
+    transform:translate(-50%,-50%)
+    
   }
   .button-container label:before {
     transform:translate(-50%,-50%);
   }
-  .button-container label:after {
-    transform:translate(-50%,-50%) rotate(90deg);
-  }
+  /* .button-container label:after {
+    transform:translate(-50%,-50%) rotate(deg);
+  } */
   .button-container .nav {
     position:relative;
     top:-20px;
@@ -550,4 +640,10 @@
   }
   .buttton-container #toggle-btn:checked + label {
     transform:rotate(135deg);
+  }
+
+  @media (max-width: 600px){
+    .button-container{
+        padding-top: 5rem;
+    }
   }
