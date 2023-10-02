@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Tvcd;
+    box-sizing: border-box;
+}
+    
+.header {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    color: yellow;
+    border: dotted 4px blue;
+    width:auto;
+    height: 15vh;
+}
+
+.header h2 {
+    display: flex;
+    flex-direction: row;
+}
+.pacman-logo {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    margin-top: 50px;
+    margin-left: -600px;
+    
+    
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.gallery {
+    margin-top: -200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box {
+    border: dotted blue 4px;
+    width: 100px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(./galleryimages/gameboy.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+
+.img-box:nth-child(2){
+    background: url(./galleryimages/arcade.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.img-box:nth-child(3){
+    background: url(./galleryimages/pacman-museum.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.img-box:nth-child(4){
+    background: url(./galleryimages/play.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.img-box:nth-child(5){
+    background: url(./galleryimages/pocket.webp);
+    background-size: cover;
+    background-position: center
+}
+
+.img-box:nth-child(6){
+    background: url(./galleryimages/Pac-Man-Birthday-NBA-event-in-mobile-game.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.img-box:nth-child(7){
+    background: url(./galleryimages/kitty.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.img-box h3{
+    background-color: yellow;
+    color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.img-box:hover {
+    width: 600px;
+    height: 600px;
+    cursor: pointer;
+}
+
+.img-box:hover h3 {
+    opacity: 1;
+    bottom: 25px;
+}
+
+@media (max-width: 800px) {
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .img-box {
+        width: 300px;
+        height: 100px;
+    }
+    .container {
+        height: 160vh;
+    }
+}

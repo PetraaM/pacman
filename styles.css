@@ -359,7 +359,7 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     .grid-content {
         width: auto;
         height: auto;
@@ -426,7 +426,7 @@
 
 .timeline {
     padding: 50px;
-    width: 80%;
+    width: 85%;
     height: auto;
     max-width: 800px;
     margin: 0 auto;
@@ -518,32 +518,32 @@
 .parent-container {
     position: absolute;
     z-index: 1;
-    top: 470px;
+    top: 500px;
     left: 300px;
 }
 
 .parent-container-2 {
     position: absolute;
     z-index: 1;
-    top: 885px;
+    top: 930px;
     left: 258px;
 }
 
 .parent-container-3 {
     position: absolute;
     z-index: 1;
-    left: 620px;
-    top: 260px;
+    left: 600px;
+    top: 290px;
 }
 
 .parent-container-4 {
     position: absolute;
     z-index: 1;
-    top: 632px;
-    left: 640px;
+    top: 655px;
+    left: 600px;
 }
 
- @media (max-width: 600px){
+ @media (max-width: 400px){
     .container {
         width: auto;
         height: 1700px;
@@ -642,7 +642,7 @@
     transform:rotate(135deg);
   }
 
-  @media (max-width: 600px){
+  @media (max-width: 400px){
     .button-container{
         padding-top: 5rem;
     }
