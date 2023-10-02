@@ -94,13 +94,17 @@
         justify-content: space-between;
     }
     .header-gifs-1 {
-        width: 30px;   
-        height: 30px
+        justify-content: flex-end;
+        width: 20px;   
+        height: 20px;
+        opacity: 1;
         
     }
     .header-gifs-2 {
-        width: 30px;   
-        height: 30px;
+        justify-content: flex-start;
+        width: 20px;   
+        height: 20px;
+        opacity: 1;
     }
 }
 
@@ -381,13 +385,13 @@
         height: auto;
     }
     .flip-card {
-        margin-left: 90px;
+        margin-left: 50px;
     }
     .flip-card-2 {
-        margin-left: 90px;
+        margin-left: 50px;
     }
     .flip-card-3 {
-        margin-left: 90px;
+        margin-left: 50px;
     }
     }
 
@@ -546,7 +550,7 @@
  @media (max-width: 400px){
     .container {
         width: auto;
-        height: 1700px;
+        height: 2200px;
     }
     .timeline ul li {
         font-size: 10px;
@@ -555,13 +559,13 @@
         left: 50px;
     }
     .parent-container-2 {
-        left: 18px;
+        left: 10px;
     }
     .parent-container-3 {
-        left: 275px;
+        left: 210px;
     }
     .parent-container-4 {
-        left: 275px;
+        left: 215px;
     }
 } 
 
@@ -643,7 +647,11 @@
   }
 
   @media (max-width: 400px){
-    .button-container{
-        padding-top: 5rem;
+    .button-container {
+        padding-top: 4rem;
+        width: 100px;
+        height: 100px;
+
+        
     }
   }
