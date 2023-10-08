@@ -38,6 +38,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     
 }
 
@@ -54,7 +55,7 @@
     height: 400px;
     margin: 10px;
     border-radius: 50px;
-    background: url(./galleryimages/gameboy.jpg);
+    background: url(/galleryimages/gameboy.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -62,37 +63,37 @@
 }
 
 .img-box:nth-child(2){
-    background: url(./galleryimages/arcade.jpg);
+    background: url(/galleryimages/arcade.jpg);
     background-size: cover;
     background-position: center
 }
 
 .img-box:nth-child(3){
-    background: url(./galleryimages/pacman-museum.jpg);
+    background: url(/galleryimages/pacman-museum.jpg);
     background-size: cover;
     background-position: center
 }
 
 .img-box:nth-child(4){
-    background: url(./galleryimages/play.jpg);
+    background: url(/galleryimages/play.jpg);
     background-size: cover;
     background-position: center
 }
 
 .img-box:nth-child(5){
-    background: url(./galleryimages/pocket.webp);
+    background: url(/galleryimages/pocket.webp);
     background-size: cover;
     background-position: center
 }
 
 .img-box:nth-child(6){
-    background: url(./galleryimages/Pac-Man-Birthday-NBA-event-in-mobile-game.jpg);
+    background: url(/galleryimages/Pac-Man-Birthday-NBA-event-in-mobile-game.jpg);
     background-size: cover;
     background-position: center
 }
 
 .img-box:nth-child(7){
-    background: url(./galleryimages/kitty.jpg);
+    background: url(/galleryimages/kitty.jpg);
     background-size: cover;
     background-position: center
 }
@@ -118,11 +119,20 @@
     bottom: 25px;
 }
 
-@media (max-width: 800px) {
+.previous {
+    border-radius: 50px;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+    border: dotted blue 4px;
+    background-color: black;
+    color: yellow;
+}
+
+@media (max-width: 860px) {
     .gallery {
         display: flex;
         flex-direction: column;
-        margin-top: -200px;
     }
     .img-box {
         width: 300px;
@@ -138,13 +148,18 @@
         display: flex;
         height: 160vh;
         flex-direction: column;
+        justify-content: center;
     }
     .header h2 {
+        text-align: center;
         font-size: 80%;
+        justify-content: center;
     }
     .pacman-logo {
-        height: 40%;
+        height: 60%;
         width: 40%;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet">
+  <title>Pac-Man Game (vanilla JS) - Responsive</title>
+  <link rel="stylesheet" href="./gamestyles.css">
+</head>
+	<body>
+		
+		<button id="play"  onClick="document.getElementById('play').style.display = 'none'; document.getElementById('h2bestScore').style.display = 'block'; document.getElementById('footer').style.display = 'none'; document.getElementById('mobile').style.display = 'none'">Click here to play</button>
+		<script src="script.js" charset="utf-8"></script>
+		<img src="/imgs/pacmanlogo.webp" alt="Logo Pac-Man" id="logo">
+		<br><br>
+		<br>
+		<h2>Score : <span id="score">0</span></h2>
+		<p id="computer">Use <kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> to play</p>
+		<p id="mobile">Swipe Up, Down, Left or Right to move Pac-Man</p>
+		<div class="grid"></div>
+		<h2 id="h2bestScore" style="display: none">Your best score : <span id="bestScore">0</span></h2>
+		
+			<a href="./index.html" class="previous">&laquo;Take me to previous page</a>
+			<br>
+			<br>
+			<br>
+			<footer id="footer">PAC-MAN™ & ©1980 BANDAI NAMCO Entertainment Inc.</footer>
+	</body>
+
+
+  <script  src="./script.js"></script>
+
+</html>
