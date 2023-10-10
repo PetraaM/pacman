@@ -19,14 +19,16 @@
 }
 
 .header h2 {
+    padding: 10px;
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 .pacman-logo {
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    height: 50%;
+    height: 80%;
     margin-top: 50px;
     margin-right: 1500px;   
 }
