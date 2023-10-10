@@ -1,10 +1,12 @@
+/*RESET*/
 *{
     margin: 0;
     padding: 0;
     font-family: Tvcd;
     box-sizing: border-box;
 }
-    
+
+/*HEADER*/
 .header {
     display: flex;
     justify-content: flex-start;
@@ -26,10 +28,9 @@
     flex-direction: column;
     height: 50%;
     margin-top: 50px;
-    margin-right: 1500px;
-    
-    
+    margin-right: 1500px;   
 }
+/*MAIN*/
 
 .container {
     width: 100%;
@@ -163,3 +164,7 @@
 
     }
 }
+
+/*FOOTER*/
+
+

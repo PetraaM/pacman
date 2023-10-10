@@ -1,28 +1,33 @@
+/*RESETS*/
+
 * {
     scrollbar-width: auto;
     scrollbar-color: yellow blue;
-  }
+}
 
  
-  *::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 16px;
-  }
+}
 
-  *::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: blue;
-  }
+}
 
-  *::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: yellow;
     border-radius: 10px;
     border: 3px dotted blue;
-  }
+}
+
+/*GENERAL*/
 
 .pacman-body-content{
     background-color: yellow;
-    font-family: Tvcd;
-    
+    font-family: Tvcd;   
 }
+
+/*HEADER */
 
 .flex-container {
     display: flex;
@@ -54,9 +59,7 @@
     padding: 4rem;
     margin-left: auto;
     margin-right: auto;
-
 }
-
 
 .header-gifs {
     display: flex;
@@ -131,6 +134,7 @@
         opacity: 1;
     }
 }
+/*HEADER MENU BUTTON*/
 
 .button-container {
     position: absolute;
@@ -268,6 +272,10 @@
         height: 70px;
     }
   }
+
+
+/*MAIN CONTENT*/
+
 .grid-content{
     padding: 1rem;
     border: dotted blue 4px;
@@ -566,14 +574,14 @@
         flex-direction: column;
         align-items: center;
     }
-    }
+}
 
 
 
+/*TIMELINE CONTAINER*/
 
 .container h2{
     text-align: center;
-
 }
 
 *{
@@ -581,7 +589,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 .container {
     font-size: 12px;
@@ -640,8 +647,7 @@
         width: 6px;
         left: 50%;
         transform: translateX(-50%);
-        background-color:yellow;
-        
+        background-color:yellow;  
     }
 
     .timeline ul li {
@@ -752,28 +758,28 @@
     
     
 }
-.parent-container {
+.gif-container {
     position: absolute;
     z-index: 1;
     top: 500px;
     left: 300px;
 }
 
-.parent-container-2 {
+.gif-container-2 {
     position: absolute;
     z-index: 1;
     top: 930px;
     left: 258px;
 }
 
-.parent-container-3 {
+.gif-container-3 {
     position: absolute;
     z-index: 1;
     left: 600px;
     top: 290px;
 }
 
-.parent-container-4 {
+.gif-container-4 {
     position: absolute;
     z-index: 1;
     top: 655px;
@@ -788,16 +794,16 @@
         font-size: 10px;
         width: auto;
     }
-    .parent-container {
+    .gif-container {
         opacity: 0;
     }
-    .parent-container-2 {
+    .gif-container-2 {
         opacity: 0;
     }
-    .parent-container-3 {
+    .gif-container-3 {
         opacity: 0;
     }
-    .parent-container-4 {
+    .gif-container-4 {
         opacity: 0;
     }
 } 
@@ -814,11 +820,11 @@
     }
 }
 
+/*FOOTER*/
 footer{
 	color : black;
 	width: 100%;
 	text-align: center;
 	bottom: 30px;
-    z-index: 10;
-	
+    z-index: 10;	
 }
